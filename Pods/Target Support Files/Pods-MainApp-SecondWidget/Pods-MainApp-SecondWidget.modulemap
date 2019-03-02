@@ -1,0 +1,6 @@
+framework module Pods_MainApp_SecondWidget {
+  umbrella header "Pods-MainApp-SecondWidget-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="TSCHeaderCell" customModule="MainApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon29x29" translatesAutoresizingMaskIntoConstraints="NO" id="aZj-Ju-W07">
+                        <rect key="frame" x="20" y="18.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="KUz-S2-VAw"/>
+                            <constraint firstAttribute="width" constant="45" id="rXa-JM-Q0O"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-Kd-rmz">
+                        <rect key="frame" x="269" y="31" width="17" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="4LP-q5-Ymm"/>
+                            <constraint firstAttribute="height" constant="20" id="tFb-FH-kiA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7M4-hK-NBi">
+                        <rect key="frame" x="82" y="18.5" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信号: 13522593206" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuT-Dl-I1I">
+                        <rect key="frame" x="82" y="49" width="124" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2x2-Kd-rmz" secondAttribute="trailing" id="4PB-xv-UGx"/>
+                    <constraint firstItem="7M4-hK-NBi" firstAttribute="leading" secondItem="aZj-Ju-W07" secondAttribute="trailing" constant="17" id="7zI-EQ-Tbn"/>
+                    <constraint firstItem="2x2-Kd-rmz" firstAttribute="centerY" secondItem="aZj-Ju-W07" secondAttribute="centerY" id="BcU-1m-G8d"/>
+                    <constraint firstItem="YuT-Dl-I1I" firstAttribute="bottom" secondItem="aZj-Ju-W07" secondAttribute="bottom" id="DFr-pX-W9y"/>
+                    <constraint firstItem="7M4-hK-NBi" firstAttribute="top" secondItem="aZj-Ju-W07" secondAttribute="top" id="HSP-5U-WFM"/>
+                    <constraint firstItem="YuT-Dl-I1I" firstAttribute="leading" secondItem="7M4-hK-NBi" secondAttribute="leading" id="dPa-st-duK"/>
+                    <constraint firstItem="aZj-Ju-W07" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="wVS-aA-bUB"/>
+                    <constraint firstItem="aZj-Ju-W07" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xPI-eD-55y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="304" y="336"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AppIcon29x29" width="29" height="29"/>
+        <image name="qrcode" width="17" height="17"/>
+    </resources>
+</document>
